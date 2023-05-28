@@ -1,0 +1,452 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'Roboto', sans-serif;
+     font-weight: 300;
+     color: black;
+
+ }
+
+ .cuerpoGrid {
+     background-color: rgb(117, 117, 117);
+     display:grid;
+
+     grid-template-columns: 1fr ;
+     grid-template-rows: auto auto 10%;
+
+     grid-template-areas: "header"
+                            "main"
+                            "footer" ;
+ }
+
+ .sizeLogo {
+    width: 4rem;
+}
+
+.contenedorLogo {
+    display: flex;
+    justify-content: center;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+
+}
+
+ul.barraNavegacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+    margin: 0;
+    padding: 0;
+
+}
+
+.barraNavegacion li a {
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: center;
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: 600;
+
+}
+
+a:visited {
+
+    color: black;
+
+}
+
+.barraNavegacion li a:hover {
+    color: rgb(132, 132, 132)
+}
+
+.barraNavegacion li {
+    display: inline-block;
+}
+
+
+header {
+    
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    background-color: rgb(243, 243, 243);
+   
+}
+
+main {
+    grid-area: main;
+    background-color: rgb(117, 117, 117);
+}
+
+footer{ 
+    grid-area: footer;
+    background-color: blue;
+}
+
+
+.imgInicio {
+    width: 100%;
+}
+
+.slide img{
+    height: 60vh;
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 10vh;
+    background-color: rgb(101, 101, 101);
+
+}
+
+footer a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+
+}
+
+footer a:hover {
+    color: rgb(132, 132, 132)
+}
+
+
+.galeriaAudiovisual {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-evenly;
+    justify-content: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    
+}
+
+
+.galeriaAudiovisual article {
+    display: flex;
+    flex-flow: column;
+
+    width: 30%;
+    margin: 5px;
+ }
+
+ h1 {
+    text-align: justify;
+}
+
+
+h1 {
+    font-family: 'Gugi', 'Roboto';
+    text-align: center;
+    font-size: 3rem;
+    padding: 2rem;
+}
+
+hr {
+    padding: 0.2rem;
+}
+
+
+.negrita {
+    font-weight: bold;
+}
+
+.normal {
+    font-weight: normal;
+}
+
+.galeriaAudiovisual article div {
+    margin: 5px;
+    width: 88%;
+ }
+ 
+ .galeriaAudiovisual article div h2 { 
+    font-weight: 500;
+    font-size: 1rem;
+ }
+
+ .galeriaAudiovisual article div p {
+    font-size: 0.8rem;
+     text-align: left;
+     font-style: italic;
+
+ }
+
+body {
+    background-color: rgb(117, 117, 117);
+}
+
+.negrita {
+    font-weight: bold;
+}
+
+.normal {
+    font-weight: normal;
+}
+
+hr {
+    padding: 0.2rem;
+}
+
+
+h1 {
+    text-align: justify;
+}
+
+.sizeLogo {
+    width: 4rem;
+}
+
+
+.contenedorLogo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    width: 80%;
+}
+
+ul.barraNavegacion {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 35%;
+
+}
+
+.barraNavegacion li a {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 1rem;
+    border-radius: 20%;
+    font-weight: 600;
+}
+
+a:visited {
+
+    color: black;
+
+}
+
+.barraNavegacion li a:hover {
+    color: rgb(132, 132, 132)
+}
+
+.barraNavegacion li {
+    display: inline-block;
+}
+
+.galeriaAudiovisual {
+    display: flex;
+    flex-flow: row wrap;
+    align-content: space-evenly;
+    justify-content: center;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    
+}
+
+
+.galeriaAudiovisual article {
+   display: flex;
+   flex-flow: column;
+
+   width: 30%;
+   margin: 5px;
+}
+
+.galeriaAudiovisual article div {
+   margin: 5px;
+   width: 88%;
+}
+
+
+.galeriaAudiovisual article div h2 { 
+   font-weight: 500;
+   font-size: 1rem;
+}
+
+.galeriaAudiovisual article div p {
+   font-size: 0.8rem;
+    text-align: left;
+    font-style: italic;
+
+}
+
+h1 {
+    font-family: 'Gugi', 'Roboto';
+    text-align: center;
+    font-size: 3rem;
+    padding: 2rem;
+}
+
+
+.galeriaObras {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+
+.galeriaObras article div {
+
+    padding: 2rem;
+
+}
+
+.galeriaObras article div img {
+    width: 30rem;
+}
+
+.galeriaObras article div {
+    width: 35rem;
+}
+
+.galeriaObras article div h2 {
+    text-align: center;
+}
+
+.boxFormulario {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.formularioContacto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 1px;
+    background-color: rgb(243, 243, 243);
+    width: 20%;
+}
+
+.formularioContacto div {
+
+    margin: 10px 0px 5px 0px;
+}
+
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 10vh;
+    background-color: rgb(101, 101, 101);
+
+}
+
+footer a {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+
+}
+
+footer a:hover {
+    color: rgb(132, 132, 132)
+}
+
+.textoBio {
+    display: flex;
+    justify-content: center;
+
+}
+
+.textoBio div {
+    width: 20%;
+}
+
+
+.imgInicio {
+    display: flex;
+    justify-content: center;
+
+}
+
+.imgInicio img {
+   width: 1984px;
+}
+
+
+.imgFondo{
+   background-image: url(../imagenes/proyecto3.jpg);
+   background-size: cover;
+   background-repeat:no-repeat;
+   height: 40vh;
+   background-position-y: -800px;
+}
+
+
+@media screen and (min-width: 720px) {
+
+    header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .contenedorLogo {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+    }
+
+    nav {
+        width: 80%;
+        align-items: flex-end;
+    }
+
+    ul.barraNavegacion {
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 35%;
+        padding-right: 5%;     
+    }
+   
+    .barraNavegacion li a {
+        text-decoration: none;
+        list-style-type: none;
+        padding: 1rem;
+        border-radius: 20%;
+        font-weight: 600;
+    }
+
+    .cuerpoGrid {
+    
+        grid-template-columns: 0.2fr 2fr 0.2fr;
+        grid-template-rows: 10vh 80vh 10vh;
+   
+        grid-template-areas: "header header header"
+                               "main main main"
+                               "footer footer footer" ;
+    }
+
+
+.slide img {
+    height: 80vh;
+}
+
+}
