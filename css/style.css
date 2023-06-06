@@ -85,8 +85,20 @@
 a:visited {
 
     color: black;
+}
+
+a:link {    /* elemento a que tengan href definido */ 
+
+    color: black;
 
 }
+
+a:active { /* elementos que se le haga click, mientras esté presionado */
+
+    color: white;
+    text-shadow: 3px 1px 5px black; 
+}
+
 
 .barraNavegacion li a:hover {
     color: rgb(132, 132, 132)
@@ -168,29 +180,6 @@ a:visited {
  /* Galeria Audiovisual */
 
 
-
- .galeriaAudiovisual {
-     display: flex;
-     flex-flow: row wrap;
-     align-content: space-evenly;
-     justify-content: center;
-     margin-left: 5rem;
-     margin-right: 5rem;
-
- }
-
- .galeriaAudiovisual article {
-     display: flex;
-     flex-flow: column;
-     width: 30%;
-     margin: 5px;
- }
-
-
- .galeriaAudiovisual article div {
-     margin: 5px;
-     width: 88%;
- }
 
  .galeriaAudiovisual article div h2 {
      font-weight: 500;
@@ -282,10 +271,10 @@ a:visited {
 
 
 
- /* Media Queries - INICIO */
+ /* Media Queries - Laptop 1366 px - INICIO - */
 
 
- @media screen and (min-width: 720px) {
+ @media screen and (min-width: 1366px) {
 
      header {
          display: flex;
@@ -303,6 +292,25 @@ a:visited {
      nav {
          width: 80%;
          align-items: flex-end;
+     }
+
+     footer {
+
+        height: 10vh;
+        display: flex;
+        flex-wrap: wrap;
+     }
+
+     footer div {
+
+        display: flex;
+        flex-wrap: wrap;
+        
+     }
+
+     footer div i{
+
+        padding: 1rem;
      }
 
      ul.barraNavegacion {
@@ -338,20 +346,64 @@ a:visited {
  }
 
 
+ /* Media Queries - Tablet 768 px - INICIO - */
+
+
+ @media screen and (min-width: 768px) {
+
+    header {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .contenedorLogo {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+    }
+
+    nav {
+        width: 80%;
+        align-items: flex-end;
+    }
+
+    ul.barraNavegacion {
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 35%;
+        padding-right: 5%;
+    }
+
+    .barraNavegacion li a {
+        text-decoration: none;
+        list-style-type: none;
+        padding: 1rem;
+        border-radius: 20%;
+        font-weight: 600;
+    }
+
+    .cuerpoGrid {
+
+        grid-template-columns: 0.2fr 2fr 0.2fr;
+        grid-template-rows: 10vh 80vh 10vh;
+
+        grid-template-areas: "header header header"
+            "main main main"
+            "footer footer footer";
+    }
+
+
+    .slide img {
+        height: 80vh;
+    }
+
+}
 
 
 
 
-
-
-
-
-
-
-
-
-
- 
  /* Media Queries - GALERIA AUDIOVISUAL - */
 
  
