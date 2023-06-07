@@ -11,20 +11,19 @@
  /* RESET DE CSS */
 
 
+
+
+ /* GRID DE CSS */
+
  .cuerpoGrid {
      background-color: rgb(117, 117, 117);
      display: grid;
-
      grid-template-columns: 1fr;
-     grid-template-rows: auto auto 10%;
-
+     grid-template-rows: auto 80vh auto;
      grid-template-areas: "header"
          "main"
          "footer";
  }
-
-
- /* GRID DE CSS */
 
 
  header {
@@ -33,29 +32,56 @@
      display: flex;
      flex-direction: column;
      align-items: center;
-     background-color: rgb(239, 239, 239);
+     background-color: #e2e3e5;
+     height: 100%;
 
  }
 
  main {
      grid-area: main;
-     background-color: rgb(117, 117, 117);
+     background-color: rgb(24, 22, 22)
  }
+
+
+.c-item{
+height: 80vh;
+}
+
+.c-img {
+    height: 80vh;
+    object-fit: cover;
+}
 
  footer {
      grid-area: footer;
      background-color: rgb(239, 239, 239);
      display: flex;
+     flex-direction: column;
      align-items: center;
      justify-content: center;
-     flex-direction: column;
-     padding-top: 5px;
-     height: 10vh;
+     padding-top: 0.7rem;
+     text-align: center;
+ }
 
+ .footerIconos {
+
+     display: flex;
+     justify-content: space-evenly;
+ }
+
+ .footerIconos a {
+     padding: 10px;
+     margin: 1rem, 1rem, 0.5rem, 1rem;
  }
 
 
+
  /* Nav bar*/
+
+ .barraNavegacion{
+
+    width: 100%;
+ }
 
  .sizeLogo {
      width: 4rem;
@@ -75,38 +101,32 @@
  }
 
  .barraNavegacion li a {
-    text-decoration: none;
-    list-style-type: none;
-    padding: 1rem;
-    border-radius: 20%;
-    font-weight: 600;
+     text-decoration: none;
+     list-style-type: none;
+     padding: 1rem;
+     border-radius: 20%;
+     font-weight: 600;
+ }
+
+ a:visited {
+
+     color: black;
+ }
+
+ a:link {
+     /* elemento a que tengan href definido */
+
+     color: black;
+
+ }
+
+ .barraNavegacion li a:hover {
+    color: rgb(194, 194, 194)
 }
 
-a:visited {
-
-    color: black;
-}
-
-a:link {    /* elemento a que tengan href definido */ 
-
-    color: black;
-
-}
-
-a:active { /* elementos que se le haga click, mientras esté presionado */
-
-    color: white;
-    text-shadow: 3px 1px 5px black; 
-}
-
-
-.barraNavegacion li a:hover {
-    color: rgb(132, 132, 132)
-}
-
-.barraNavegacion li {
-    display: inline-block;
-}
+ .barraNavegacion li {
+     display: inline-block;
+ }
 
 
  ul.barraNavegacion {
@@ -137,15 +157,6 @@ a:active { /* elementos que se le haga click, mientras esté presionado */
  }
 
 
- .slide img {
-     height: 60vh;
- }
-
- .c-img {
-     object-fit: cover;
- }
-
-
  footer a {
      text-decoration: none;
      font-family: 'Roboto', sans-serif;
@@ -156,8 +167,6 @@ a:active { /* elementos que se le haga click, mientras esté presionado */
  footer a:hover {
      color: rgb(132, 132, 132)
  }
-
-
 
 
  h1 {
@@ -179,6 +188,11 @@ a:active { /* elementos que se le haga click, mientras esté presionado */
 
  /* Galeria Audiovisual */
 
+
+ #main__audiovisual{
+
+    background-color: rgb(239, 239, 239);
+ }
 
 
  .galeriaAudiovisual article div h2 {
@@ -226,7 +240,7 @@ a:active { /* elementos que se le haga click, mientras esté presionado */
  }
 
 
- /* Contacto */ 
+ /* Contacto */
 
  .boxFormulario {
      display: flex;
@@ -258,7 +272,7 @@ a:active { /* elementos que se le haga click, mientras esté presionado */
      width: 20%;
  }
 
-/* Bio */
+ /* Bio */
 
 
  .imgFondo {
@@ -296,21 +310,79 @@ a:active { /* elementos que se le haga click, mientras esté presionado */
 
      footer {
 
-        height: 10vh;
-        display: flex;
-        flex-wrap: wrap;
+         height: 10vh;
+         display: flex;
+         flex-wrap: wrap;
      }
 
      footer div {
 
-        display: flex;
-        flex-wrap: wrap;
-        
+         display: flex;
+         flex-wrap: wrap;
+
      }
 
-     footer div i{
+     footer div i {
 
-        padding: 1rem;
+         padding: 1rem;
+     }
+
+     ul.barraNavegacion {
+         flex-direction: row;
+         justify-content: flex-end;
+         width: 35%;
+         padding-right: 5%;
+     }
+
+     .barraNavegacion li a {
+         text-decoration: none;
+         list-style-type: none;
+         padding: 1rem;
+         border-radius: 20%;
+         font-weight: 600;
+     }
+
+    
+
+     .cuerpoGrid {
+
+         grid-template-columns: 0.2fr 2fr 0.2fr;
+         grid-template-rows: 10vh 80vh 10vh;
+
+         grid-template-areas: "header header header"
+             "main main main"
+             "footer footer footer";
+     }
+
+
+     .slide img {
+         height: 100%;
+     }
+
+ }
+
+
+ /* Media Queries - Tablet 768 px - INICIO - */
+
+
+ @media screen and (min-width: 768px) {
+
+     header {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+     }
+
+     .contenedorLogo {
+         flex-direction: row;
+         justify-content: center;
+         align-items: center;
+         width: 20%;
+     }
+
+     nav {
+         width: 80%;
+         align-items: flex-end;
      }
 
      ul.barraNavegacion {
@@ -343,67 +415,33 @@ a:active { /* elementos que se le haga click, mientras esté presionado */
          height: 80vh;
      }
 
- }
+     footer {
 
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 100%;
+        grid-template-areas: ". info redes";
+        
 
- /* Media Queries - Tablet 768 px - INICIO - */
-
-
- @media screen and (min-width: 768px) {
-
-    header {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+     
     }
 
-    .contenedorLogo {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 20%;
-    }
-
-    nav {
-        width: 80%;
-        align-items: flex-end;
-    }
-
-    ul.barraNavegacion {
-        flex-direction: row;
+    .footerIconos{
+        grid-area: redes;
         justify-content: flex-end;
-        width: 35%;
-        padding-right: 5%;
+        align-self: normal;
+
     }
 
-    .barraNavegacion li a {
-        text-decoration: none;
-        list-style-type: none;
-        padding: 1rem;
-        border-radius: 20%;
-        font-weight: 600;
-    }
-
-    .cuerpoGrid {
-
-        grid-template-columns: 0.2fr 2fr 0.2fr;
-        grid-template-rows: 10vh 80vh 10vh;
-
-        grid-template-areas: "header header header"
-            "main main main"
-            "footer footer footer";
-    }
-
-
-    .slide img {
-        height: 80vh;
-    }
+   .footerInfo {
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+   }
 
 }
-
-
-
+  
 
  /* Media Queries - GALERIA AUDIOVISUAL - */
-
- 

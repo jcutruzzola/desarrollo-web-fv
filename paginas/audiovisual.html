@@ -29,50 +29,65 @@
 
     <header id="inicio_index">
 
-        <div class="contenedorLogo">
-
-            <a href="../index.html">
-
-                <img class="sizeLogo" src="../imagenes/logo.png" alt="">
-            </a>
-        </div>
-
-        <nav>
-            <ul class="barraNavegacion">
-                <li> <a href="../index.html">Inicio</a></li>
-                <li><a href="./audiovisual.html">Audiovisual</a></li>
-                <li><a href="./obras.html">Obras</a></li>
-                <li><a href="./contacto.html">Contacto</a></li>
-                <li><a href="./bio.html">Bio</a> </li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg bg-body-light mx-5 barraNavegacion">
+            <div class="container-fluid ">
+    
+              <a class="navbar-brand" href="#inicio_index">
+                <img src="../imagenes/logo.png" alt="logo-fv" width="60">
+              </a>
+    
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+    
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../index.html">Inicio</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="./audiovisual.html">Audiovisual</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./obras.html">Obras</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="./bio.html">Bio</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
 
     </header>
 
-    <main class="container h-100">
+    <main class="container-fluid h-100" id="main__audiovisual">
 
         <div class="row">
             <h1 class=> Audiovisual</h1>
         </div>
 
-        <section class="row d-flex flex-wrap  gap-3">
+        <section class="row d-flex flex-wrap gap-3">
 
             <article class="col-sm-12 col-m-4 col-xxl-4">
 
-                <div class="col-12">
+                <div class="col-sm-12 d-sm-flex justify-content-sm-center">
 
-                    <iframe width="400" height="226" src="https://www.youtube.com/embed/LbW1Yj6jHrk"
+                    <iframe width="auto" height="226" src="https://www.youtube.com/embed/LbW1Yj6jHrk"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
 
                 </div>
 
-                <div class="col-12">
+                <div class="col-sm-12 d-sm-flex flex-sm-column align-items-sm-center mt-sm-4">
 
-                    <h2 class="col-12">Proyecto 1</h2>
+                    <h2 class="col-sm-8">Proyecto 1</h2>
 
-                    <p class="col-12 ">
+                    <p class="col-sm-8 ">
                         Lorem ipsum dolor sit amet, consectetur
                         adipiscing elit, sed do eiusmod tempor
                     </p>
@@ -85,7 +100,7 @@
 
                 <div class="col-12 d-inline-flex">
 
-                    <iframe width="400" height="226" src="https://www.youtube.com/embed/eJdDtMPMPMM?start=2"
+                    <iframe width="auto" height="226" src="https://www.youtube.com/embed/eJdDtMPMPMM?start=2"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
@@ -105,11 +120,11 @@
 
             </article>
 
-            <article class=" col-sm-12 col-m-4 col-4 col-xxl-4">
+            <article class=" col-sm-12 col-m-4 col-xxl-4">
 
                 <div>
 
-                    <iframe width="400" height="226" src="https://www.youtube.com/embed/EUlC8ue8NFI"
+                    <iframe width="auto" height="226" src="https://www.youtube.com/embed/EUlC8ue8NFI"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
@@ -140,24 +155,42 @@
     <aside>
 
 
-    </aside>
+        <footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
-        crossorigin="anonymous"></script>
-
-
-
-    <footer class=" h-10">
-
-        <a href="#inicio_index">Ir al inicio</a>
-
-        <p>Todos los derechos reservados</p>
-
-        <i class="fa-brands fa-instagram"></i>
-
-
-    </footer>
+            <div class="footerInfo">
+      
+              <a href="#inicio_index" >Ir al inicio</a>
+      
+              <!-- LINKS A WIREFRAMES --NO UTILIZADO--  <a href="https://www.figma.com/file/NqQ7Jb2KUcirlBRpSvaQ80/WEB-WIREFRAME?t=0PCPxGv5HIxNMXyN-1">Ir a los
+            Wireframes</a> 
+          
+          -->
+              <p> ® Todos los derechos reservados</p>
+      
+      
+            </div>
+      
+            <div class="footerIconos" >
+      
+              <a href="https://instagram.com/facuvinabal?igshid=MzRlODBiNWFlZA==" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-square-instagram fa-lg"></i> </a>
+              <a href="https://www.facebook.com/fvinabal?mibextid=ZbWKwL" target="_blank" rel="noopener noreferrer"> <i
+                  class="fa-brands fa-facebook fa-lg"></i> </a>
+              <a href="https://www.linkedin.com/in/facundo-vi%C3%B1abal-7b011323b" target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin fa-lg"></i> </a>
+              <a href="https://mail.google.com" target="_blank" rel="noopener noreferrer"> <i
+                  class="fa-solid fa-envelope fa-lg"></i> </a>
+      
+      
+            </div>
+      
+          </footer>
+      
+        </div>
+      
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+            crossorigin="anonymous"></script>
 
 </body>
 
