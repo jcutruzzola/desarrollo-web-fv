@@ -22,8 +22,8 @@
      grid-template-columns: 1fr;
      grid-template-rows: auto 80vh auto;
      grid-template-areas: "header"
-                            "main"
-                            "footer";
+         "main"
+         "footer";
  }
 
 
@@ -40,19 +40,19 @@
 
  main {
      grid-area: main;
-     background-color: rgb(24, 22, 22)
+     background-color: rgb(117, 117, 117);
  }
 
 
-.c-item{
-height: 80vh;
-}
+ .c-item {
+     height: 80vh;
+ }
 
-.c-img {
-    height: 80vh;
-    object-fit: cover;
-    object-position: center;
-}
+ .c-img {
+     height: 80vh;
+     object-fit: cover;
+     object-position: center;
+ }
 
  footer {
      grid-area: footer;
@@ -80,19 +80,11 @@ height: 80vh;
 
  /* Nav bar*/
 
- .barraNavegacion{
+ .barraNavegacion {
 
-    width: 100%;
+     width: 100%;
  }
 
- .sizeLogo {
-     width: 4rem;
- }
-
- .contenedorLogo {
-     display: flex;
-     justify-content: center;
- }
 
  nav {
      display: flex;
@@ -123,8 +115,8 @@ height: 80vh;
  }
 
  .barraNavegacion li a:hover {
-    color: rgb(194, 194, 194)
-}
+     color: rgb(194, 194, 194)
+ }
 
  .barraNavegacion li {
      display: inline-block;
@@ -191,9 +183,9 @@ height: 80vh;
  /* Galeria Audiovisual */
 
 
- #main__audiovisual{
+ #main__audiovisual {
 
-    background-color: rgb(239, 239, 239);
+     background-color: rgb(239, 239, 239);
  }
 
 
@@ -209,40 +201,114 @@ height: 80vh;
 
  }
 
-/* #main__audiovisual article {
-    border: solid 1px black;
-    padding: 1rem;
-    border-radius:5px;
-    */
-
- body {
-     background-color: rgb(117, 117, 117);
- }
-
  /* Galeria Obras */
 
+ .cuerpo-obras {
+
+     display: grid;
+     grid-template-columns: 1fr;
+     grid-template-rows: auto 80vh auto;
+     grid-template-areas: "header"
+         "main"
+         "footer";
+ }
+
  .galeriaObras {
+
+     background-color: rgb(239, 239, 239);
      display: flex;
-     flex-flow: row nowrap;
+     flex-flow: row wrap;
+     justify-content: center;
      align-items: center;
-     justify-content: space-evenly;
+     overflow: auto;
 
  }
 
- .galeriaObras article div {
+ .obra-1 {
+     height: 500px;
+     background-image: url(../imagenes/mantra-t.png);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     overflow: hidden;
+ }
 
-     padding: 2rem;
-     width: 35rem;
+ .obra-2 {
+
+     height: 500px;
+     background-image: url(../imagenes/atisbo-t.jpeg);
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     overflow: hidden;
 
  }
 
- .galeriaObras article div img {
-     width: 30rem;
+ .obra-3 {
+
+     height: 500px;
+     background-image: url(../imagenes/scrap-t.png);
+     background-color: black;
+     background-repeat: no-repeat;
+     background-position: center;
+     background-size: cover;
+     overflow: hidden;
+
  }
 
- .galeriaObras article div h2 {
-     text-align: center;
+ .galeriaObras img {
+
+     width: 100%;
  }
+
+ .obrasInfo1 {
+
+     position: relative;
+     top: 100px;
+ }
+
+ .obrasInfo2 {
+     position: relative;
+     top: 100px;
+
+ }
+
+ .obrasInfo3 {
+     position: relative;
+     top: 100px;
+
+ }
+
+ .galeriaObras h2 {
+
+     color: aliceblue;
+     font-size: 1.6rem;
+ }
+
+ .galeriaObras h3 {
+     color: aliceblue;
+
+     font-size: 0.9rem;
+ }
+
+ .galeriaObras p {
+
+     color: aliceblue;
+     font-style: italic;
+     font-size: 1rem;
+ }
+
+
+ .galeriaObras div {
+
+     margin: 1.2rem;
+
+ }
+
+ .negritaObras {
+     font-weight: bold;
+ }
+
 
 
  /* Contacto */
@@ -294,169 +360,235 @@ height: 80vh;
 
  @media screen and (min-width: 1366px) {
 
-    /* Elementos base */
+     /* Elementos base */
 
-    header {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+     header {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+     }
+
+
+     nav {
+         width: 80%;
+         align-items: flex-end;
+     }
+
+     footer {
+
+         height: 10vh;
+         display: flex;
+         flex-wrap: wrap;
+     }
+
+     footer div {
+
+         display: flex;
+         flex-wrap: wrap;
+
+     }
+
+     footer div i {
+
+         padding: 1rem;
+     }
+
+     ul.barraNavegacion {
+         flex-direction: row;
+         justify-content: flex-end;
+         width: 35%;
+         padding-right: 5%;
+     }
+
+     .barraNavegacion li a {
+         text-decoration: none;
+         list-style-type: none;
+         padding: 1rem;
+         border-radius: 20%;
+         font-weight: 600;
+     }
+
+     .cuerpoGrid {
+
+         grid-template-columns: 0.2fr 2fr 0.2fr;
+         grid-template-rows: 10vh 80vh 10vh;
+
+         grid-template-areas: "header header header"
+             "main main main"
+             "footer footer footer";
+     }
+
+
+     .slide img {
+         height: 100%;
+     }
+
+
+     footer {
+
+         display: grid;
+         grid-template-columns: 1fr 1fr 1fr;
+         grid-template-rows: 100%;
+         grid-template-areas: ". info redes";
+
+
+
+     }
+
+     .footerIconos {
+         grid-area: redes;
+         justify-content: flex-end;
+         align-self: normal;
+
+     }
+
+     .footerInfo {
+         grid-area: info;
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         text-align: center;
+     }
+
+     /* Galeria Audiovisual */
+
+     .galeriaClips {
+         width: 560px;
+     }
+
+     /* Galeria Obras */
+
+     .obra-1 {
+        height: 100vh;
+
     }
 
-
-    nav {
-        width: 80%;
-        align-items: flex-end;
-    }
-
-    footer {
-
-        height: 10vh;
-        display: flex;
-        flex-wrap: wrap;
-    }
-
-    footer div {
-
-        display: flex;
-        flex-wrap: wrap;
+    .obra-2 {
+        height: 100vh;
 
     }
 
-    footer div i {
+    .obra-3 {
+        height: 100vh;
 
-        padding: 1rem;
     }
 
-    ul.barraNavegacion {
-        flex-direction: row;
-        justify-content: flex-end;
-        width: 35%;
-        padding-right: 5%;
+    .obrasInfo1 {
+        position: relative;
+        top: 250px;
+
     }
 
-    .barraNavegacion li a {
-        text-decoration: none;
-        list-style-type: none;
-        padding: 1rem;
-        border-radius: 20%;
-        font-weight: 600;
+    .obrasInfo1 h2 {
+
+        font-size: 5rem;
     }
 
-    .cuerpoGrid {
+    .obrasInfo1 p {
 
-        grid-template-columns: 0.2fr 2fr 0.2fr;
-        grid-template-rows: 10vh 80vh 10vh;
-
-        grid-template-areas: "header header header"
-                            "main main main"
-                            "footer footer footer";
+        width: 45%;
     }
 
+    .obrasInfo2 {
+        position: relative;
+        top: 250px;
 
-    .slide img {
-        height: 100%;
     }
-
-
-    footer {
-
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 100%;
-        grid-template-areas: ". info redes";
-        
- 
-     
-    }
- 
-    .footerIconos{
-        grid-area: redes;
-        justify-content: flex-end;
-        align-self: normal;
- 
-    }
- 
-   .footerInfo {
-    grid-area: info;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-   }
-
-   .galeriaClips{
-    width: 560px;
-}
-
-
-
-}
-
-
-/* Media Queries - Tablet 768 px - */
-
-
-@media screen and (min-width: 768px) and (max-width:1365px) {
-
-    /* Elementos Base */ 
-
-    header {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .contenedorLogo {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 20%;
-    }
-
-    nav {
-        width: 80%;
-        align-items: flex-end;
-    }
-
-    ul.barraNavegacion {
-        flex-direction: row;
-        justify-content: flex-end;
-        width: 35%;
-        padding-right: 5%;
-    }
-
-    .barraNavegacion li a {
-        text-decoration: none;
-        list-style-type: none;
-        padding: 1rem;
-        border-radius: 20%;
-        font-weight: 600;
-    }
-
     
+    .obrasInfo2 h2 {
 
-  /* Galeria Audiovisual */
+        font-size: 5rem;
+    }
 
-  .galeriaClips{
-    width: 560px;
+    .obrasInfo2 p {
+
+        width: 45%;
+    }
+
+    .obrasInfo3 {
+        position: relative;
+        top: 250px;
+
+    }
+    
+    .obrasInfo3 h2 {
+
+        font-size: 5rem;
+    }
+
+    .obrasInfo3 p {
+
+        width: 45%;
+    }
+
+.galeriaObrasImg{
+margin: 0;
+padding: 0;
+
 }
 
-}
+ }
 
 
-/* Media Queries - 576px - */
+ /* Media Queries - Tablet 768 px - */
 
 
-@media screen and (min-width:576px) {
+ @media screen and (min-width: 768px) and (max-width:1365px) {
 
-    /* Galeria Audiovisual */
+     /* Elementos Base */
 
-   .galeriaClips{
-       width: 400px;
-   }
-}
+     header {
+         display: flex;
+         flex-direction: row;
+         flex-wrap: wrap;
+     }
+
+     .contenedorLogo {
+         flex-direction: row;
+         justify-content: center;
+         align-items: center;
+         width: 20%;
+     }
+
+     nav {
+         width: 80%;
+         align-items: flex-end;
+     }
+
+     ul.barraNavegacion {
+         flex-direction: row;
+         justify-content: flex-end;
+         width: 35%;
+         padding-right: 5%;
+     }
+
+     .barraNavegacion li a {
+         text-decoration: none;
+         list-style-type: none;
+         padding: 1rem;
+         border-radius: 20%;
+         font-weight: 600;
+     }
 
 
 
+     /* Galeria Audiovisual */
 
- 
+     .galeriaClips {
+         width: 560px;
+     }
+
+ }
+
+
+ /* Media Queries - 576px - */
+
+
+ @media screen and (min-width:576px) {
+
+     /* Galeria Audiovisual */
+
+     .galeriaClips {
+         width: 400px;
+     }
+ }
