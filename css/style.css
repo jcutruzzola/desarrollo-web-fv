@@ -197,17 +197,23 @@ height: 80vh;
  }
 
 
- .galeriaAudiovisual article div h2 {
+ #main__audiovisual article div h2 {
      font-weight: 500;
-     font-size: 1rem;
+     font-size: 1.5rem;
  }
 
- .galeriaAudiovisual article div p {
+ #main__audiovisual article div p {
      font-size: 0.8rem;
      text-align: left;
      font-style: italic;
 
  }
+
+/* #main__audiovisual article {
+    border: solid 1px black;
+    padding: 1rem;
+    border-radius:5px;
+    */
 
  body {
      background-color: rgb(117, 117, 117);
@@ -283,10 +289,12 @@ height: 80vh;
  }
 
 
- /* Media Queries - Laptop 1366 px - INICIO - */
+ /* Media Queries - Laptop 1366 px */
 
 
  @media screen and (min-width: 1366px) {
+
+    /* Elementos base */
 
     header {
         display: flex;
@@ -294,12 +302,6 @@ height: 80vh;
         flex-wrap: wrap;
     }
 
-    .contenedorLogo {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 20%;
-    }
 
     nav {
         width: 80%;
@@ -340,16 +342,14 @@ height: 80vh;
         font-weight: 600;
     }
 
-   
-
     .cuerpoGrid {
 
         grid-template-columns: 0.2fr 2fr 0.2fr;
         grid-template-rows: 10vh 80vh 10vh;
 
         grid-template-areas: "header header header"
-            "main main main"
-            "footer footer footer";
+                            "main main main"
+                            "footer footer footer";
     }
 
 
@@ -357,13 +357,48 @@ height: 80vh;
         height: 100%;
     }
 
+
+    footer {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 100%;
+        grid-template-areas: ". info redes";
+        
+ 
+     
+    }
+ 
+    .footerIconos{
+        grid-area: redes;
+        justify-content: flex-end;
+        align-self: normal;
+ 
+    }
+ 
+   .footerInfo {
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+   }
+
+   .galeriaClips{
+    width: 560px;
 }
 
 
-/* Media Queries - Tablet 768 px - INICIO - */
+
+}
 
 
-@media screen and (min-width: 768px) {
+/* Media Queries - Tablet 768 px - */
+
+
+@media screen and (min-width: 768px) and (max-width:1365px) {
+
+    /* Elementos Base */ 
 
     header {
         display: flex;
@@ -397,142 +432,31 @@ height: 80vh;
         border-radius: 20%;
         font-weight: 600;
     }
-
-    .cuerpoGrid {
-
-        grid-template-columns: 0.2fr 2fr 0.2fr;
-        grid-template-rows: 10vh 80vh 10vh;
-
-        grid-template-areas: "header header header"
-            "main main main"
-            "footer footer footer";
-    }
-
-
-    .slide img {
-        height: 80vh;
-    }
-
-    footer {
-
-       display: grid;
-       grid-template-columns: 1fr 1fr 1fr;
-       grid-template-rows: 100%;
-       grid-template-areas: ". info redes";
-       
 
     
-   }
 
-   .footerIconos{
-       grid-area: redes;
-       justify-content: flex-end;
-       align-self: normal;
+  /* Galeria Audiovisual */
 
-   }
-
-  .footerInfo {
-   grid-area: info;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
-   text-align: center;
-  }
+  .galeriaClips{
+    width: 560px;
+}
 
 }
 
 
-/* Media Queries - Tablet 768 px - INICIO - */
-
-@media screen and (min-width: 768px) {
-
-    header {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    .contenedorLogo {
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        width: 20%;
-    }
-
-    nav {
-        width: 80%;
-        align-items: flex-end;
-    }
-
-    ul.barraNavegacion {
-        flex-direction: row;
-        justify-content: flex-end;
-        width: 35%;
-        padding-right: 5%;
-    }
-
-    .barraNavegacion li a {
-        text-decoration: none;
-        list-style-type: none;
-        padding: 1rem;
-        border-radius: 20%;
-        font-weight: 600;
-    }
-
-    .cuerpoGrid {
-
-        grid-template-columns: 0.2fr 2fr 0.2fr;
-        grid-template-rows: 10vh 80vh 10vh;
-
-        grid-template-areas: "header header header"
-            "main main main"
-            "footer footer footer";
-    }
-
-
-    .slide img {
-        height: 80vh;
-    }
-
-    footer {
-
-       margin-top: auto;
-    }
-
-}
- 
-
-/* Media Queries - GALERIA AUDIOVISUAL - 576px */
+/* Media Queries - 576px - */
 
 
 @media screen and (min-width:576px) {
 
+    /* Galeria Audiovisual */
 
    .galeriaClips{
        width: 400px;
    }
 }
 
-/* Media Queries - GALERIA AUDIOVISUAL - 768px */
 
-
-@media screen and (max-width:768px) {
-
-
-   .galeriaClips{
-       width: 560px;
-   }
-
-}
-
-
- /* Media Queries - GALERIA AUDIOVISUAL - 992px */
-
-
- @media screen and (min-width:992) {
-
-
- }
 
 
  
