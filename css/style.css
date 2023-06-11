@@ -267,11 +267,13 @@
      top: 100px;
  }
 
+
  .obrasInfo2 {
      position: relative;
      top: 100px;
 
  }
+
 
  .obrasInfo3 {
      position: relative;
@@ -279,16 +281,19 @@
 
  }
 
+
+
  .galeriaObras h2 {
 
      color: aliceblue;
-     font-size: 1.6rem;
+     font-size: 6rem;
+     text-align: center;
  }
 
  .galeriaObras h3 {
      color: aliceblue;
-
      font-size: 0.9rem;
+     text-align: center;
  }
 
  .galeriaObras p {
@@ -459,73 +464,101 @@
      /* Galeria Obras */
 
      .obra-1 {
-        height: 100vh;
+         height: 100vh;
+         display: flex;
+         justify-content: center;
 
-    }
 
-    .obra-2 {
-        height: 100vh;
+     }
 
-    }
+     .obra-2 {
+         height: 100vh;
+         display: flex;
+         justify-content: center;
 
-    .obra-3 {
-        height: 100vh;
+     }
 
-    }
+     .obra-3 {
+         height: 100vh;
+         display: flex;
+         justify-content: center;
 
-    .obrasInfo1 {
-        position: relative;
-        top: 250px;
+     }
 
-    }
+     .obrasInfo1 {
+         position: relative;
+         top: 250px;
 
-    .obrasInfo1 h2 {
+     }
 
-        font-size: 5rem;
-    }
+     .obrasInfo1 h2 {
+         font-size: 7rem;
+     }
 
-    .obrasInfo1 p {
+     .obrasInfo1 p {
 
-        width: 45%;
-    }
+         width: 700px;
+         font-size: 1.7rem;
+         font-weight: 250;
 
-    .obrasInfo2 {
-        position: relative;
-        top: 250px;
+     }
 
-    }
-    
-    .obrasInfo2 h2 {
+     .obrasInfo2 {
+         position: relative;
+         top: 250px;
 
-        font-size: 5rem;
-    }
+     }
 
-    .obrasInfo2 p {
+     .obrasInfo2 h2 {
 
-        width: 45%;
-    }
+         font-size: 7rem;
+     }
 
-    .obrasInfo3 {
-        position: relative;
-        top: 250px;
+     .obrasInfo2 h3 {
 
-    }
-    
-    .obrasInfo3 h2 {
+         font-size: 1.5rem;
+     }
 
-        font-size: 5rem;
-    }
+     .obrasInfo2 p {
 
-    .obrasInfo3 p {
+         width: 700px;
+         font-size: 1.7rem;
+         font-weight: 250;
+     }
 
-        width: 45%;
-    }
+     .obrasInfo3 {
+         position: relative;
+         top: 250px;
 
-.galeriaObrasImg{
-margin: 0;
-padding: 0;
+     }
 
-}
+     .obrasInfo3 h2 {
+
+         font-size: 7rem;
+     }
+
+     .obrasInfo3 p {
+
+         width: 800px;
+         font-size: 1.7rem;
+         font-weight: 250;
+
+
+     }
+
+     .obrasInfo3 p {
+
+         width: 100%;
+
+
+     }
+
+     /* PENDIENTE CONSULTA!!: Cuando le quito el % relativo a la clase .obrasInfo3 y el % al p la pagina se rompe TODA. No encuentro por que motivo pasa, pero pasa solo en ese DIV, en los demas no hace falta asignar eso. */
+
+     .obrasInfo3 {
+         width: 45%;
+
+     }
 
  }
 
@@ -578,6 +611,62 @@ padding: 0;
          width: 560px;
      }
 
+     /* Galeria Obras */
+
+
+     .obrasInfo1 {
+         position: relative;
+         top: 50px;
+
+     }
+
+     .obrasInfo1 h2 {
+         text-align: center;
+         font-size: 7rem;
+     }
+
+     .obrasInfo1 p {
+         text-align: center;
+     }
+
+
+
+     .obrasInfo2 {
+         position: relative;
+         top: 50px;
+
+     }
+
+     .obrasInfo2 h2 {
+         text-align: center;
+         font-size: 7rem;
+     }
+
+     .obrasInfo2 h3 {
+         text-align: center;
+     }
+
+     .obrasInfo2 p {
+         text-align: center;
+     }
+
+     .obrasInfo3 {
+         position: relative;
+         top: 50px;
+
+     }
+
+     .obrasInfo3 h2 {
+         text-align: center;
+         font-size: 7rem;
+     }
+
+     .obrasInfo3 p {
+         text-align: center;
+     }
+
+
+
  }
 
 
@@ -591,4 +680,57 @@ padding: 0;
      .galeriaClips {
          width: 400px;
      }
+
+
+     /* Galeria Obras */
+
+     .obrasInfo1 {
+         position: relative;
+         top: 50px;
+
+     }
+
+     .obrasInfo1 h2 {
+         text-align: center;
+         font-size: 7rem;
+     }
+
+     .obrasInfo1 p {
+         text-align: center;
+     }
+
+     .obrasInfo2 {
+         position: relative;
+         top: 50px;
+
+     }
+
+     .obrasInfo2 h2 {
+         text-align: center;
+         font-size: 7rem;
+     }
+
+     .obrasInfo2 h3 {
+         text-align: center;
+     }
+
+     .obrasInfo2 p {
+         text-align: center;
+     }
+
+     .obrasInfo3 {
+         position: relative;
+         top: 50px;
+
+     }
+
+     .obrasInfo3 h2 {
+         text-align: center;
+         font-size: 7rem;
+     }
+
+     .obrasInfo3 p {
+         text-align: center;
+     }
+
  }
