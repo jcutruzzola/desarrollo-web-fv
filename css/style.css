@@ -316,9 +316,9 @@
 
 
 
- /* Contacto */
+ 
 
- .boxFormulario {
+ /* .boxFormulario {
      display: flex;
      justify-content: center;
      width: 100%;
@@ -346,6 +346,41 @@
 
  .textoBio div {
      width: 20%;
+ }
+*/ 
+
+/* Contacto */
+
+.cuerpo-contacto {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 80vh auto;
+    grid-template-areas: "header"
+        "main"
+        "footer";
+}
+
+ .cuerpoContacto {
+
+    background-image: url(../imagenes/mantra-t.png) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+ }
+
+
+ .formulario-control{
+
+    height: 50%;
+    background-color: rgba(0, 0, 0, 0.48);
+    position: relative;
+    top: 150px;
+ }
+
+ .text-body-emphasis {
+
+    color: aliceblue;
  }
 
  /* Bio */
