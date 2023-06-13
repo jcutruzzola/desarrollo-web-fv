@@ -1,0 +1,24 @@
+
+@import "./reset/reset";
+@import "./layout/grids";
+@import "./layout/inicio";
+@import "./layout/header";
+@import "./layout/footer";
+
+@import "./layout/audiovisual";
+
+
+
+// Components
+
+@import "../scss/components/carousel";
+
+
+
+// Media Queries
+
+@import "./views/queries";
+
+
+@import "./components/titles";
+

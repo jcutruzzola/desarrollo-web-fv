@@ -1,0 +1,52 @@
+
+
+@import "../utilities/variables";
+
+.cuerpoGrid {
+
+    background-color: $secundario;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 80vh auto;
+    grid-template-areas: 
+    
+    "header"
+    "main"
+    "footer";
+}
+
+
+
+
+header {
+    grid-area: header;
+    background-color: $primario;
+    
+}
+
+main {
+    grid-area: main;
+    background-color: $secundario;
+}
+
+footer {
+    grid-area: footer;
+    background-color: $primario;
+   
+
+}
+    
+
+.cuerpo-obras {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 80vh auto;
+    grid-template-areas: 
+   
+    "header"
+    "main"
+    "footer";
+}
+
+

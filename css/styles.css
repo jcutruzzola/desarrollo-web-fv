@@ -1,0 +1,407 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  color: black;
+}
+
+.cuerpoGrid {
+  background-color: rgb(117, 117, 117);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 80vh auto;
+  grid-template-areas: "header" "main" "footer";
+}
+
+header {
+  grid-area: header;
+  background-color: rgb(239, 239, 239);
+}
+
+main {
+  grid-area: main;
+  background-color: rgb(117, 117, 117);
+}
+
+footer {
+  grid-area: footer;
+  background-color: rgb(239, 239, 239);
+}
+
+.cuerpo-obras {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 80vh auto;
+  grid-template-areas: "header" "main" "footer";
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e2e3e5;
+  height: 100%;
+}
+
+.barraNavegacion {
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+}
+
+.barraNavegacion li a {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 1rem;
+  border-radius: 20%;
+  font-weight: 600;
+}
+
+a:visited {
+  color: black;
+}
+
+a:link {
+  /* elemento a que tengan href definido */
+  color: black;
+}
+
+.barraNavegacion li {
+  display: inline-block;
+}
+
+ul.barraNavegacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35%;
+  margin: 0;
+  padding: 0;
+}
+
+.barraNavegacion li a {
+  display: flex;
+  justify-content: space-evenly;
+  justify-content: center;
+  text-decoration: none;
+  list-style-type: none;
+  font-weight: 600;
+}
+
+.barraNavegacion li {
+  display: inline-block;
+}
+
+.barraNavegacion li a:hover {
+  color: rgb(132, 132, 132);
+}
+
+footer {
+  grid-area: footer;
+  background-color: rgb(239, 239, 239);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 0.7rem;
+  text-align: center;
+}
+
+.footerIconos {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.footerIconos a {
+  padding: 10px;
+  margin: 1rem, 1rem, 0.5rem, 1rem;
+}
+
+footer a {
+  text-decoration: none;
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+
+footer a:hover {
+  color: rgb(132, 132, 132);
+}
+
+#main__audiovisual {
+  background-color: rgb(239, 239, 239);
+}
+#main__audiovisual article div h2 {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+#main__audiovisual article div p {
+  font-size: 0.8rem;
+  text-align: left;
+  font-style: italic;
+}
+
+.c-item {
+  height: 80vh;
+}
+
+.c-img {
+  height: 80vh;
+  object-fit: cover;
+  object-position: center;
+}
+
+/* Media Queries - Laptop 1366 px */
+@media screen and (min-width: 1366px) {
+  /* Elementos base */
+  header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  nav {
+    width: 80%;
+    align-items: flex-end;
+  }
+  footer {
+    height: 10vh;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  footer div {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  footer div i {
+    padding: 1rem;
+  }
+  .barraNavegacion li a {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 1rem;
+    border-radius: 20%;
+    font-weight: 600;
+  }
+  .cuerpoGrid {
+    grid-template-columns: 0.2fr 2fr 0.2fr;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas: "header header header" "main main main" "footer footer footer";
+  }
+  .slide img {
+    height: 100%;
+  }
+  footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100%;
+    grid-template-areas: ". info redes";
+  }
+  .footerIconos {
+    grid-area: redes;
+    justify-content: flex-end;
+    align-self: normal;
+  }
+  .footerInfo {
+    grid-area: info;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+  .galeriaClips {
+    width: 560px;
+  }
+  /* Galeria Obras */
+  .obra-1 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+  .obra-2 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+  .obra-3 {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+  }
+  .obrasInfo1 {
+    position: relative;
+    top: 250px;
+  }
+  .obrasInfo1 h2 {
+    font-size: 7rem;
+  }
+  .obrasInfo1 p {
+    width: 700px;
+    font-size: 1.7rem;
+    font-weight: 250;
+  }
+  .obrasInfo2 {
+    position: relative;
+    top: 250px;
+  }
+  .obrasInfo2 h2 {
+    font-size: 7rem;
+  }
+  .obrasInfo2 h3 {
+    font-size: 1.5rem;
+  }
+  .obrasInfo2 p {
+    width: 700px;
+    font-size: 1.7rem;
+    font-weight: 250;
+  }
+  .obrasInfo3 {
+    position: relative;
+    top: 250px;
+  }
+  .obrasInfo3 h2 {
+    font-size: 7rem;
+  }
+  .obrasInfo3 p {
+    width: 800px;
+    font-size: 1.7rem;
+    font-weight: 250;
+  }
+  .obrasInfo3 p {
+    width: 100%;
+  }
+  /* PENDIENTE CONSULTA!!: Cuando le quito el % relativo a la clase .obrasInfo3 y el % al p la pagina se rompe TODA. No encuentro por que motivo pasa, pero pasa solo en ese DIV, en los demas no hace falta asignar eso. */
+  .obrasInfo3 {
+    width: 45%;
+  }
+}
+/* Media Queries - Tablet 768 px - */
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  /* Elementos Base */
+  header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .contenedorLogo {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+  }
+  nav {
+    width: 80%;
+    align-items: flex-end;
+  }
+  ul.barraNavegacion {
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 35%;
+    padding-right: 5%;
+  }
+  .barraNavegacion li a {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 1rem;
+    border-radius: 20%;
+    font-weight: 600;
+  }
+  /* Galeria Audiovisual */
+  .galeriaClips {
+    width: 560px;
+  }
+  /* Galeria Obras */
+  .obrasInfo1 {
+    position: relative;
+    top: 50px;
+  }
+  .obrasInfo1 h2 {
+    text-align: center;
+    font-size: 7rem;
+  }
+  .obrasInfo1 p {
+    text-align: center;
+  }
+  .obrasInfo2 {
+    position: relative;
+    top: 50px;
+  }
+  .obrasInfo2 h2 {
+    text-align: center;
+    font-size: 7rem;
+  }
+  .obrasInfo2 h3 {
+    text-align: center;
+  }
+  .obrasInfo2 p {
+    text-align: center;
+  }
+  .obrasInfo3 {
+    position: relative;
+    top: 50px;
+  }
+  .obrasInfo3 h2 {
+    text-align: center;
+    font-size: 7rem;
+  }
+  .obrasInfo3 p {
+    text-align: center;
+  }
+}
+/* Media Queries - 576px - */
+@media screen and (min-width: 576px) {
+  /* Galeria Audiovisual */
+  .galeriaClips {
+    width: 400px;
+  }
+  /* Galeria Obras */
+  .obrasInfo1 {
+    position: relative;
+    top: 50px;
+  }
+  .obrasInfo1 h2 {
+    text-align: center;
+    font-size: 7rem;
+  }
+  .obrasInfo1 p {
+    text-align: center;
+  }
+  .obrasInfo2 {
+    position: relative;
+    top: 50px;
+  }
+  .obrasInfo2 h2 {
+    text-align: center;
+    font-size: 7rem;
+  }
+  .obrasInfo2 h3 {
+    text-align: center;
+  }
+  .obrasInfo2 p {
+    text-align: center;
+  }
+  .obrasInfo3 {
+    position: relative;
+    top: 50px;
+  }
+  .obrasInfo3 h2 {
+    text-align: center;
+    font-size: 7rem;
+  }
+  .obrasInfo3 p {
+    text-align: center;
+  }
+}
+h1 {
+  font-family: "Gugi", "Roboto";
+  text-align: center;
+  font-size: 3rem;
+  padding: 2rem;
+}
+
+/*# sourceMappingURL=styles.css.map */

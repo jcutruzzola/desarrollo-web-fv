@@ -1,0 +1,78 @@
+header {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #e2e3e5;
+    height: 100%;
+
+}
+
+// nav bar
+
+.barraNavegacion {
+
+    width: 100%;
+}
+
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+
+}
+
+.barraNavegacion li a {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 1rem;
+    border-radius: 20%;
+    font-weight: 600;
+}
+
+a:visited {
+
+    color: black;
+}
+
+a:link {
+    /* elemento a que tengan href definido */
+
+    color: black;
+
+}
+
+
+.barraNavegacion li {
+    display: inline-block;
+}
+
+
+ul.barraNavegacion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 35%;
+    margin: 0;
+    padding: 0;
+
+}
+
+.barraNavegacion li a {
+    display: flex;
+    justify-content: space-evenly;
+    justify-content: center;
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: 600;
+}
+
+.barraNavegacion li {
+    display: inline-block;
+}
+
+.barraNavegacion li a:hover {
+    color: rgb(132, 132, 132)
+}
