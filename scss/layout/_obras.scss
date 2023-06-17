@@ -10,6 +10,41 @@
     align-items: center;
     overflow: auto;
 
+
+    & img {
+
+        width: 100%;
+    }
+
+    & div{
+        margin: 1.2rem;
+
+    }
+    
+    & h2 {
+
+        color: aliceblue;
+        font-size: 6rem;
+        text-align: center;
+
+    }
+
+    & h3{
+        color: aliceblue;
+        font-size: 0.9rem;
+        text-align: center;
+    }
+
+  
+
+    & p {
+
+        color: aliceblue;
+        font-style: italic;
+        font-size: 1rem;
+
+    }
+
 }
 
 .obra-1 {
@@ -44,11 +79,6 @@
 
 }
 
-.galeriaObras img {
-
-    width: 100%;
-}
-
 .obrasInfo1 {
 
     position: relative;
@@ -58,43 +88,14 @@
 
 .obrasInfo2 {
     position: relative;
-    top: 100px;
+    top: 50px;
 
 }
 
 
 .obrasInfo3 {
     position: relative;
-    top: 100px;
-
-}
-
-
-
-.galeriaObras h2 {
-
-    color: aliceblue;
-    font-size: 6rem;
-    text-align: center;
-}
-
-.galeriaObras h3 {
-    color: aliceblue;
-    font-size: 0.9rem;
-    text-align: center;
-}
-
-.galeriaObras p {
-
-    color: aliceblue;
-    font-style: italic;
-    font-size: 1rem;
-}
-
-
-.galeriaObras div {
-
-    margin: 1.2rem;
+    top: 80px;
 
 }
 

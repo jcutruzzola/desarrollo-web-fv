@@ -48,20 +48,30 @@ header {
 .barraNavegacion {
   width: 100%;
 }
+.barraNavegacion li {
+  display: inline-block;
+}
+.barraNavegacion li a {
+  text-decoration: none;
+  list-style-type: none;
+  padding: 1rem;
+  border-radius: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  justify-content: center;
+  text-decoration: none;
+  list-style-type: none;
+  font-weight: 600;
+}
+.barraNavegacion li a:hover {
+  color: rgb(132, 132, 132);
+}
 
 nav {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 80%;
-}
-
-.barraNavegacion li a {
-  text-decoration: none;
-  list-style-type: none;
-  padding: 1rem;
-  border-radius: 20%;
-  font-weight: 600;
 }
 
 a:visited {
@@ -73,10 +83,6 @@ a:link {
   color: black;
 }
 
-.barraNavegacion li {
-  display: inline-block;
-}
-
 ul.barraNavegacion {
   display: flex;
   flex-direction: column;
@@ -86,26 +92,7 @@ ul.barraNavegacion {
   padding: 0;
 }
 
-.barraNavegacion li a {
-  display: flex;
-  justify-content: space-evenly;
-  justify-content: center;
-  text-decoration: none;
-  list-style-type: none;
-  font-weight: 600;
-}
-
-.barraNavegacion li {
-  display: inline-block;
-}
-
-.barraNavegacion li a:hover {
-  color: rgb(132, 132, 132);
-}
-
 footer {
-  grid-area: footer;
-  background-color: rgb(239, 239, 239);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -113,25 +100,38 @@ footer {
   padding-top: 0.7rem;
   text-align: center;
 }
-
-.footerIconos {
-  display: flex;
-  justify-content: space-evenly;
-}
-
-.footerIconos a {
-  padding: 10px;
-  margin: 1rem, 1rem, 0.5rem, 1rem;
-}
-
 footer a {
   text-decoration: none;
   font-family: "Roboto", sans-serif;
   font-weight: 700;
 }
-
 footer a:hover {
   color: rgb(132, 132, 132);
+}
+
+.footerIconos {
+  display: flex;
+  justify-content: space-evenly;
+}
+.footerIconos a {
+  padding: 10px;
+  margin: 1rem, 1rem, 0.5rem, 1rem;
+}
+
+.fa-facebook:hover {
+  color: #3b5998;
+}
+
+.fa-linkedin:hover {
+  color: #3b5998;
+}
+
+.fa-square-instagram:hover {
+  color: #3b5998;
+}
+
+.fa-envelope:hover {
+  color: #3b5998;
 }
 
 #main__audiovisual {
@@ -145,6 +145,84 @@ footer a:hover {
   font-size: 0.8rem;
   text-align: left;
   font-style: italic;
+}
+
+/* Galeria Obras */
+.galeriaObras {
+  background-color: rgb(239, 239, 239);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+}
+.galeriaObras img {
+  width: 100%;
+}
+.galeriaObras div {
+  margin: 1.2rem;
+}
+.galeriaObras h2 {
+  color: aliceblue;
+  font-size: 6rem;
+  text-align: center;
+}
+.galeriaObras h3 {
+  color: aliceblue;
+  font-size: 0.9rem;
+  text-align: center;
+}
+.galeriaObras p {
+  color: aliceblue;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.obra-1 {
+  height: 500px;
+  background-image: url(../imagenes/mantra-t.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.obra-2 {
+  height: 500px;
+  background-image: url(../imagenes/atisbo-t.jpeg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.obra-3 {
+  height: 500px;
+  background-image: url(../imagenes/scrap-t.png);
+  background-color: black;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.obrasInfo1 {
+  position: relative;
+  top: 100px;
+}
+
+.obrasInfo2 {
+  position: relative;
+  top: 50px;
+}
+
+.obrasInfo3 {
+  position: relative;
+  top: 80px;
+}
+
+.negritaObras {
+  font-weight: bold;
 }
 
 .c-item {
@@ -248,6 +326,7 @@ footer a:hover {
   .obrasInfo2 {
     position: relative;
     top: 250px;
+    padding-top: 3%;
   }
   .obrasInfo2 h2 {
     font-size: 7rem;
@@ -263,6 +342,8 @@ footer a:hover {
   .obrasInfo3 {
     position: relative;
     top: 250px;
+    padding-top: 7%;
+    width: 45%;
   }
   .obrasInfo3 h2 {
     font-size: 7rem;
@@ -271,14 +352,10 @@ footer a:hover {
     width: 800px;
     font-size: 1.7rem;
     font-weight: 250;
-  }
-  .obrasInfo3 p {
     width: 100%;
   }
-  /* PENDIENTE CONSULTA!!: Cuando le quito el % relativo a la clase .obrasInfo3 y el % al p la pagina se rompe TODA. No encuentro por que motivo pasa, pero pasa solo en ese DIV, en los demas no hace falta asignar eso. */
-  .obrasInfo3 {
-    width: 45%;
-  }
+  /* PENDIENTE CONSULTA!!: Cuando le quito el % relativo a la clase .obrasInfo3 y el % al p la pagina se rompe TODA. 
+  No encuentro por que motivo pasa, pero pasa solo en ese DIV, en los demas no hace falta asignar eso. */
 }
 /* Media Queries - Tablet 768 px - */
 @media screen and (min-width: 768px) and (max-width: 1365px) {
@@ -287,12 +364,6 @@ footer a:hover {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-  }
-  .contenedorLogo {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 20%;
   }
   nav {
     width: 80%;
@@ -320,12 +391,12 @@ footer a:hover {
     position: relative;
     top: 50px;
   }
+  .obrasInfo1 p {
+    text-align: center;
+  }
   .obrasInfo1 h2 {
     text-align: center;
     font-size: 7rem;
-  }
-  .obrasInfo1 p {
-    text-align: center;
   }
   .obrasInfo2 {
     position: relative;

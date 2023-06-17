@@ -13,6 +13,29 @@ header {
 .barraNavegacion {
 
     width: 100%;
+    & li{
+        display: inline-block;
+        a{
+            text-decoration: none;
+            list-style-type: none;
+            padding: 1rem;
+            border-radius: 20%;
+            display: flex;
+            justify-content: space-evenly;
+            justify-content: center;
+            text-decoration: none;
+            list-style-type: none;
+            font-weight: 600;
+
+            &:hover {
+                color: rgb(132, 132, 132)
+
+                }   
+        
+            }
+    } 
+    
+    
 }
 
 
@@ -24,13 +47,6 @@ nav {
 
 }
 
-.barraNavegacion li a {
-    text-decoration: none;
-    list-style-type: none;
-    padding: 1rem;
-    border-radius: 20%;
-    font-weight: 600;
-}
 
 a:visited {
 
@@ -45,11 +61,6 @@ a:link {
 }
 
 
-.barraNavegacion li {
-    display: inline-block;
-}
-
-
 ul.barraNavegacion {
     display: flex;
     flex-direction: column;
@@ -58,21 +69,4 @@ ul.barraNavegacion {
     margin: 0;
     padding: 0;
 
-}
-
-.barraNavegacion li a {
-    display: flex;
-    justify-content: space-evenly;
-    justify-content: center;
-    text-decoration: none;
-    list-style-type: none;
-    font-weight: 600;
-}
-
-.barraNavegacion li {
-    display: inline-block;
-}
-
-.barraNavegacion li a:hover {
-    color: rgb(132, 132, 132)
 }

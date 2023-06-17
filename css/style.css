@@ -315,6 +315,13 @@
  }
 
 
+/* Formulario */
+
+.cuerpoContacto h1 {
+
+    padding: 1rem;
+}
+
 
   .boxFormulario {
     box-sizing: border-box;
@@ -338,14 +345,68 @@
 
  .formularioContacto div {
 
+    width: 100%;
      margin: 10px 0px 5px 0px;
  }
 
- .formularioContacto div input {
-
+.input-width {
     width: 100%;
 }
 
+.box-text-area{
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.button-1{
+    
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 0.8rem 1.3rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 2px;
+    font-weight: bold;
+
+    transition-duration: 0.5s;
+
+}
+
+.button-1:hover {
+    background-color: #dedede; 
+    color: rgb(10, 10, 10);
+  }
+  
+
+  .button-2{
+    
+    background-color: rgba(0, 0, 0, 0.3);
+    color: white;
+    padding: 0.8rem 1.3rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1rem;
+    border-radius: 2px;
+    font-weight: bold;
+
+      transition-duration: 0.5s;
+
+}
+
+.button-2:hover {
+    background-color: #dedede; 
+    color: rgb(10, 10, 10);
+  }
+
+
+  .box-button{
+
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly
+  }
 
 
 /* bio */
@@ -377,6 +438,7 @@
     background-image: url(../imagenes/mantra-t.png) ;
     background-size: cover;
     background-repeat: no-repeat;
+    overflow:auto;
 
  }
 
