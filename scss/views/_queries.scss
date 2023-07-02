@@ -198,7 +198,42 @@
     /* PENDIENTE CONSULTA!!: Cuando le quito el % relativo a la clase .obrasInfo3 y el % al p la pagina se rompe TODA. 
     No encuentro por que motivo pasa, pero pasa solo en ese DIV, en los demas no hace falta asignar eso. */
 
+    /* Contacto */
+
+ 
+ .formularioContacto {
+    width: 100%;
+   margin: 1rem;
+
+   div {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+
+    }
+    
 }
+
+.boxFormulario {
+    width:500px;
+    
+ }
+
+
+ .input-width {
+    width: 80%;
+}
+
+.box-text-area {
+
+    width: 80%;
+
+}
+
+}
+
+
+ 
 
 
 /* Media Queries - Tablet 768 px - */
@@ -307,13 +342,43 @@
 
     }
 
-}
+    /* Contacto */
+
+    .formularioContacto {
+      
+       div {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    
+        }
+        
+    }
+
+    .boxFormulario {
+        width:400px;
+        
+     }
+    
+    
+     .input-width {
+        width: 80%;
+    }
+    
+    .box-text-area {
+    
+        width: 80%;
+    
+    }
+    
+
+    }
 
 
 /* Media Queries - 576px - */
 
 
-@media screen and (min-width:576px) {
+@media screen and (min-width:576px) and (max-width:767px) {
 
     /* Galeria Audiovisual */
 
@@ -385,4 +450,35 @@
 
     }
 
+    
+
+    /* Contacto */
+
+    .formularioContacto {
+      
+        div {
+         width: 90%;
+         display: flex;
+         justify-content: center;
+     
+         }
+         
+     }
+ 
+     .boxFormulario {
+         width:400px;
+         
+      }
+     
+     
+      .input-width {
+         width: 80%;
+     }
+     
+     .box-text-area {
+     
+         width: 80%;
+     
+     }
+     
 }

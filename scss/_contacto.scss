@@ -1,0 +1,25 @@
+.cuerpo-contacto {
+
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: auto 80vh auto;
+   grid-template-areas:
+
+      "header"
+      "main"
+      "footer";
+}
+
+.cuerpoContacto {
+
+   background-image: url(../imagenes/mantra-t.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   overflow: auto;
+
+}
+
+.h1-color-sp {
+
+   color: white;
+}

@@ -1,32 +1,96 @@
 /* Formulario */
 
- /* .boxFormulario {
-     display: flex;
-     justify-content: center;
-     width: 100%;
- }
+.cuerpoContacto h1 {
 
- .formularioContacto {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     border: solid 1px;
-     background-color: rgb(243, 243, 243);
-     width: 20%;
- }
+  padding: 1rem;
+}
 
- .formularioContacto div {
 
-     margin: 10px 0px 5px 0px;
- }
+.boxFormulario {
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  width: 95%;
+  margin: auto;
+  border: solid 1px rgba(255, 255, 255, 0.574);
+}
 
- .textoBio {
-     display: flex;
-     justify-content: center;
+.formularioContacto {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 1rem;
 
- }
+}
 
- .textoBio div {
-     width: 20%;
- }
-*/ 
+.formularioContacto div {
+
+  width: 100%;
+  margin: 10px 0px 5px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.input-width {
+  width: 80%;
+}
+
+.box-text-area {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.button-1 {
+
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 10px 30px;
+  margin:0.3rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  border-radius: 2px;
+  font-weight: bold;
+
+  transition-duration: 0.5s;
+
+}
+
+.button-1:hover {
+  background-color: #dedede;
+  color: rgb(10, 10, 10);
+}
+
+
+.button-2 {
+
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 10px 30px;
+  margin:0.3rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  border-radius: 2px;
+  font-weight: bold;
+
+  transition-duration: 0.5s;
+
+}
+
+.button-2:hover {
+  background-color: #dedede;
+  color: rgb(10, 10, 10);
+}
+
+
+.box-button {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly
+}

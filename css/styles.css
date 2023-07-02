@@ -225,6 +225,24 @@ footer a:hover {
   font-weight: bold;
 }
 
+.cuerpo-contacto {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 80vh auto;
+  grid-template-areas: "header" "main" "footer";
+}
+
+.cuerpoContacto {
+  background-image: url(../imagenes/mantra-t.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: auto;
+}
+
+.h1-color-sp {
+  color: white;
+}
+
 .c-item {
   height: 80vh;
 }
@@ -233,6 +251,89 @@ footer a:hover {
   height: 80vh;
   object-fit: cover;
   object-position: center;
+}
+
+/* Formulario */
+.cuerpoContacto h1 {
+  padding: 1rem;
+}
+
+.boxFormulario {
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  width: 95%;
+  margin: auto;
+  border: solid 1px rgba(255, 255, 255, 0.574);
+}
+
+.formularioContacto {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 1rem;
+}
+
+.formularioContacto div {
+  width: 100%;
+  margin: 10px 0px 5px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.input-width {
+  width: 80%;
+}
+
+.box-text-area {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.button-1 {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 10px 30px;
+  margin: 0.3rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  border-radius: 2px;
+  font-weight: bold;
+  transition-duration: 0.5s;
+}
+
+.button-1:hover {
+  background-color: #dedede;
+  color: rgb(10, 10, 10);
+}
+
+.button-2 {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 10px 30px;
+  margin: 0.3rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  border-radius: 2px;
+  font-weight: bold;
+  transition-duration: 0.5s;
+}
+
+.button-2:hover {
+  background-color: #dedede;
+  color: rgb(10, 10, 10);
+}
+
+.box-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 /* Media Queries - Laptop 1366 px */
@@ -356,6 +457,25 @@ footer a:hover {
   }
   /* PENDIENTE CONSULTA!!: Cuando le quito el % relativo a la clase .obrasInfo3 y el % al p la pagina se rompe TODA. 
   No encuentro por que motivo pasa, pero pasa solo en ese DIV, en los demas no hace falta asignar eso. */
+  /* Contacto */
+  .formularioContacto {
+    width: 100%;
+    margin: 1rem;
+  }
+  .formularioContacto div {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+  .boxFormulario {
+    width: 500px;
+  }
+  .input-width {
+    width: 80%;
+  }
+  .box-text-area {
+    width: 80%;
+  }
 }
 /* Media Queries - Tablet 768 px - */
 @media screen and (min-width: 768px) and (max-width: 1365px) {
@@ -423,9 +543,24 @@ footer a:hover {
   .obrasInfo3 p {
     text-align: center;
   }
+  /* Contacto */
+  .formularioContacto div {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+  .boxFormulario {
+    width: 400px;
+  }
+  .input-width {
+    width: 80%;
+  }
+  .box-text-area {
+    width: 80%;
+  }
 }
 /* Media Queries - 576px - */
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 576px) and (max-width: 767px) {
   /* Galeria Audiovisual */
   .galeriaClips {
     width: 400px;
@@ -466,6 +601,21 @@ footer a:hover {
   }
   .obrasInfo3 p {
     text-align: center;
+  }
+  /* Contacto */
+  .formularioContacto div {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+  }
+  .boxFormulario {
+    width: 400px;
+  }
+  .input-width {
+    width: 80%;
+  }
+  .box-text-area {
+    width: 80%;
   }
 }
 h1 {
