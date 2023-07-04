@@ -50,3 +50,16 @@ footer {
 }
 
 
+.cuerpo-bio {
+
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 80vh auto;
+    grid-template-areas: 
+    
+    "header"
+    "main"
+    "footer";
+
+
+ }

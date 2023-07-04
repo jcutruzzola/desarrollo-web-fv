@@ -37,6 +37,13 @@ footer {
   grid-template-areas: "header" "main" "footer";
 }
 
+.cuerpo-bio {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 80vh auto;
+  grid-template-areas: "header" "main" "footer";
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -241,6 +248,66 @@ footer a:hover {
 
 .h1-color-sp {
   color: white;
+}
+
+/* bio */
+.cuerpo-bio {
+  overflow: auto;
+}
+
+.bkg-img {
+  background-image: url(/imagenes/proyecto3.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 600px;
+  -webkit-filter: blur(2px);
+}
+
+.bio-content {
+  position: relative;
+  top: -560px;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.texto-bio {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+}
+
+.textoBio {
+  padding: 1rem;
+  margin: 1rem;
+  width: 20%;
+}
+.textoBio p {
+  color: whitesmoke;
+}
+
+.h1__color-sp {
+  color: whitesmoke;
+}
+
+.texto-bio-sp {
+  color: whitesmoke;
+  padding: 1rem;
+  margin: 1rem;
+  text-align: justify;
+}
+
+.img-bio {
+  width: 200px;
+  border: solid 2px whitesmoke;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.img-bio img {
+  width: 100%;
 }
 
 .c-item {
