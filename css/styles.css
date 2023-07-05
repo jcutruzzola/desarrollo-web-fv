@@ -6,6 +6,9 @@
   font-weight: 300;
   color: black;
 }
+* body::-webkit-scrollbar {
+  display: none;
+}
 
 .cuerpoGrid {
   background-color: rgb(117, 117, 117);
@@ -42,6 +45,10 @@ footer {
   grid-template-columns: 1fr;
   grid-template-rows: auto 80vh auto;
   grid-template-areas: "header" "main" "footer";
+}
+
+.footerPosition {
+  height: 100%;
 }
 
 header {
@@ -155,6 +162,10 @@ footer a:hover {
 }
 
 /* Galeria Obras */
+.cuerpo-obras {
+  overflow-y: hidden;
+}
+
 .galeriaObras {
   background-color: rgb(239, 239, 239);
   display: flex;
@@ -168,10 +179,11 @@ footer a:hover {
 }
 .galeriaObras div {
   margin: 1.2rem;
+  width: 90%;
 }
 .galeriaObras h2 {
   color: aliceblue;
-  font-size: 6rem;
+  font-size: 5rem;
   text-align: center;
 }
 .galeriaObras h3 {
@@ -185,9 +197,16 @@ footer a:hover {
   font-size: 1rem;
 }
 
+/* 
+
+*/
+.galeriaObrasImg {
+  width: 100%;
+}
+
 .obra-1 {
   height: 500px;
-  background-image: url(../imagenes/mantra-t.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../imagenes/mantra-t.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -196,7 +215,7 @@ footer a:hover {
 
 .obra-2 {
   height: 500px;
-  background-image: url(../imagenes/atisbo-t.jpeg);
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url(../imagenes/atisbo-t.jpeg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -205,7 +224,7 @@ footer a:hover {
 
 .obra-3 {
   height: 500px;
-  background-image: url(../imagenes/scrap-t.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.6)), url(../imagenes/scrap-t.png);
   background-color: black;
   background-repeat: no-repeat;
   background-position: center;
@@ -255,13 +274,18 @@ footer a:hover {
   overflow: auto;
 }
 
+.container-bkg-img {
+  overflow: hidden;
+}
+
 .bkg-img {
-  background-image: url(/imagenes/proyecto3.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(/imagenes/proyecto3.jpg);
   background-size: cover;
   background-repeat: repeat;
   background-position: center;
   height: 950px;
   -webkit-filter: blur(2px);
+  filter: blur(2px);
 }
 
 .bio-content {
@@ -308,6 +332,11 @@ footer a:hover {
 
 .img-bio img {
   width: 100%;
+}
+
+.btn:hover {
+  background-color: black;
+  color: rgb(239, 239, 239);
 }
 
 .c-item {
@@ -481,7 +510,7 @@ footer a:hover {
   }
   .obrasInfo1 {
     position: relative;
-    top: 250px;
+    top: 150px;
   }
   .obrasInfo1 h2 {
     font-size: 7rem;
@@ -490,10 +519,12 @@ footer a:hover {
     width: 700px;
     font-size: 1.7rem;
     font-weight: 250;
+    text-align: center;
+    margin: auto;
   }
   .obrasInfo2 {
     position: relative;
-    top: 250px;
+    top: 150px;
     padding-top: 3%;
   }
   .obrasInfo2 h2 {
@@ -506,10 +537,11 @@ footer a:hover {
     width: 700px;
     font-size: 1.7rem;
     font-weight: 250;
+    margin: auto;
   }
   .obrasInfo3 {
     position: relative;
-    top: 250px;
+    top: 150px;
     padding-top: 7%;
     width: 45%;
   }
@@ -520,7 +552,7 @@ footer a:hover {
     width: 800px;
     font-size: 1.7rem;
     font-weight: 250;
-    width: 100%;
+    margin: auto;
   }
   /* PENDIENTE CONSULTA!!: Cuando le quito el % relativo a la clase .obrasInfo3 y el % al p la pagina se rompe TODA. 
   No encuentro por que motivo pasa, pero pasa solo en ese DIV, en los demas no hace falta asignar eso. */
@@ -542,6 +574,42 @@ footer a:hover {
   }
   .box-text-area {
     width: 80%;
+  }
+  /* Bio */
+  .bio-content {
+    top: -675px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 15vh 50vh 15vh;
+    grid-template-areas: "h1 h1" "img text" ". button";
+  }
+  .container-h1 {
+    grid-area: h1;
+  }
+  .container-img {
+    grid-area: img;
+    margin-left: 200px;
+    display: flex;
+    align-items: center;
+  }
+  .img-bio {
+    width: 250px;
+  }
+  .container-text {
+    grid-area: text;
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    padding-right: 50px;
+  }
+  .texto-bio-sp {
+    font-size: 1.4rem;
+  }
+  .bkg-img {
+    height: 700px;
+  }
+  .container-button {
+    grid-area: button;
   }
 }
 /* Media Queries - Tablet 768 px - */
@@ -625,6 +693,15 @@ footer a:hover {
   .box-text-area {
     width: 80%;
   }
+  /* Bio */
+  .bio-content {
+    flex-direction: column;
+    align-items: center;
+    top: -675px;
+  }
+  .bkg-img {
+    height: 700px;
+  }
 }
 /* Media Queries - 576px - */
 @media screen and (min-width: 576px) and (max-width: 767px) {
@@ -683,6 +760,15 @@ footer a:hover {
   }
   .box-text-area {
     width: 80%;
+  }
+  /* Bio */
+  .bio-content {
+    flex-direction: column;
+    align-items: center;
+    top: -675px;
+  }
+  .bkg-img {
+    height: 700px;
   }
 }
 h1 {

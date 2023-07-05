@@ -1,28 +1,32 @@
 /* bio */
 
 
+@import "../utilities/variables";
+
 .cuerpo-bio {
 
     overflow: auto;
+}
 
-
+.container-bkg-img{
+    overflow: hidden;
 }
 
 .bkg-img {
-    // position: absolute;
-    background-image: url(/imagenes/proyecto3.jpg); 
+    background: linear-gradient( rgba(0,0,0,0.4), rgba(0,0,0,0.6)), url(/imagenes/proyecto3.jpg);
     background-size: cover;
-    background-repeat:repeat;
+    background-repeat: repeat;
     background-position: center;
     height: 950px;
     -webkit-filter: blur(2px);
+    filter: blur(2px);
 
 }
 
 .bio-content {
     position: relative;
     top: -940px;
-    z-index:2;
+    z-index: 2;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -35,20 +39,18 @@
 }
 
 
-
-
 .textoBio {
     padding: 1rem;
     margin: 1rem;
     width: 20%;
 
     p {
-    
+
         color: whitesmoke;
     }
 }
 
-.h1__color-sp{
+.h1__color-sp {
 
     color: whitesmoke;
 }
@@ -74,3 +76,9 @@
     width: 100%;
 }
 
+
+.btn:hover{
+
+    background-color: $colorNegro;
+    color: $primario;
+}
