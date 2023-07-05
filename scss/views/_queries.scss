@@ -260,21 +260,20 @@
 
      .container-img{
         grid-area: img;
-        margin-left:200px;
+        margin-left:300px;
         display: flex;
         align-items: center;
 
      }
 
      .img-bio {
-        width: 250px;
+        width: 320px;
      }
 
      .container-text {
         grid-area: text;
         display: flex;
         align-items: center;
-        margin-top: 25px;
         padding-right: 50px;
      }
 
