@@ -258,15 +258,15 @@ footer a:hover {
 .bkg-img {
   background-image: url(/imagenes/proyecto3.jpg);
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-position: center;
-  height: 600px;
+  height: 950px;
   -webkit-filter: blur(2px);
 }
 
 .bio-content {
   position: relative;
-  top: -560px;
+  top: -940px;
   z-index: 2;
   display: flex;
   flex-wrap: wrap;
